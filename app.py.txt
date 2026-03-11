@@ -3,7 +3,7 @@ import pandas as pd
 import urllib.parse
 
 # 1. SETUP & DATA LOADING
-st.set_page_config(page_title="Dog Matcher 2026", page_icon="🐶")
+st.set_page_config(page_title="Soul Dog Matcher 2026", page_icon="🐶")
 
 @st.cache_data
 def load_data():
@@ -81,4 +81,5 @@ if submitted:
         st.link_button(f"🏠 Find {best_match}s at local shelters", f"https://www.google.com/search?q={google_query}")
         
     else:
+
         st.error("No breeds matched those specific criteria. Try loosening your size or family filters!")
